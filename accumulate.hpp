@@ -17,7 +17,7 @@ typedef struct _defult {
      return a;
     }
 
-} _defult;
+} defult;
 
 namespace itertools
 {
@@ -29,7 +29,8 @@ namespace itertools
         FUNCTION func;
     public:
 //        accumulate(T& containter) :  numbers_container(containter){}
-        accumulate(T& containter , FUNCTION f = _defult()) :  numbers_container(containter), func (f){}
+        accumulate(T& containter , FUNCTION f = defult()) :  numbers_container(containter), func (f){}
+
         class iterator
         {
         private:
