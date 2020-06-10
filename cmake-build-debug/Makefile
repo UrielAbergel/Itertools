@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/114/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/112/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/114/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/112/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uriel/CLionProjects/IteratorStruct
+CMAKE_SOURCE_DIR = /home/yair/Desktop/CPP/itertools-cfar-a
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uriel/CLionProjects/IteratorStruct/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yair/Desktop/CPP/itertools-cfar-a/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/uriel/CLionProjects/IteratorStruct/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/114/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/112/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/114/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/112/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles /home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/Desktop/CPP/itertools-cfar-a/cmake-build-debug/CMakeFiles /home/yair/Desktop/CPP/itertools-cfar-a/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/Desktop/CPP/itertools-cfar-a/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ IteratorStruct/fast:
 	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/build
 .PHONY : IteratorStruct/fast
 
-main.o: main.cpp.o
+Demo.o: Demo.cpp.o
 
-.PHONY : main.o
+.PHONY : Demo.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/main.cpp.o
-.PHONY : main.cpp.o
+Demo.cpp.o:
+	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/Demo.cpp.o
+.PHONY : Demo.cpp.o
 
-main.i: main.cpp.i
+Demo.i: Demo.cpp.i
 
-.PHONY : main.i
+.PHONY : Demo.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/main.cpp.i
-.PHONY : main.cpp.i
+Demo.cpp.i:
+	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/Demo.cpp.i
+.PHONY : Demo.cpp.i
 
-main.s: main.cpp.s
+Demo.s: Demo.cpp.s
 
-.PHONY : main.s
+.PHONY : Demo.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/main.cpp.s
-.PHONY : main.cpp.s
+Demo.cpp.s:
+	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/Demo.cpp.s
+.PHONY : Demo.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... IteratorStruct"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Demo.o"
+	@echo "... Demo.i"
+	@echo "... Demo.s"
 .PHONY : help
 
 
