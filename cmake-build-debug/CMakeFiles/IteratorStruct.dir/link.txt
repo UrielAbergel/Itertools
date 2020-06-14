@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/IteratorStruct.dir/main.cpp.o  -o IteratorStruct 
+/usr/bin/c++  -g   CMakeFiles/IteratorStruct.dir/Demo.cpp.o  -o IteratorStruct 

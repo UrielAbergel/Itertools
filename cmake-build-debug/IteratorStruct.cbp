@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/uriel/CLionProjects/IteratorStruct/main.cpp">
+		<Unit filename="/home/uriel/CLionProjects/IteratorStruct/Demo.cpp">
 			<Option target="IteratorStruct"/>
 		</Unit>
 		<Unit filename="/home/uriel/CLionProjects/IteratorStruct/CMakeLists.txt">

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/uriel/CLionProjects/IteratorStruct/main.cpp" "/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles/IteratorStruct.dir/main.cpp.o"
+  "/home/uriel/CLionProjects/IteratorStruct/Demo.cpp" "/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles/IteratorStruct.dir/Demo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

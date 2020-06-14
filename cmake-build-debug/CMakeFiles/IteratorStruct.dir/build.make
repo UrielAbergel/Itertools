@@ -57,27 +57,27 @@ include CMakeFiles/IteratorStruct.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/IteratorStruct.dir/flags.make
 
-CMakeFiles/IteratorStruct.dir/main.cpp.o: CMakeFiles/IteratorStruct.dir/flags.make
-CMakeFiles/IteratorStruct.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IteratorStruct.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IteratorStruct.dir/main.cpp.o -c /home/uriel/CLionProjects/IteratorStruct/main.cpp
+CMakeFiles/IteratorStruct.dir/Demo.cpp.o: CMakeFiles/IteratorStruct.dir/flags.make
+CMakeFiles/IteratorStruct.dir/Demo.cpp.o: ../Demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/IteratorStruct.dir/Demo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/IteratorStruct.dir/Demo.cpp.o -c /home/uriel/CLionProjects/IteratorStruct/Demo.cpp
 
-CMakeFiles/IteratorStruct.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IteratorStruct.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uriel/CLionProjects/IteratorStruct/main.cpp > CMakeFiles/IteratorStruct.dir/main.cpp.i
+CMakeFiles/IteratorStruct.dir/Demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/IteratorStruct.dir/Demo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uriel/CLionProjects/IteratorStruct/Demo.cpp > CMakeFiles/IteratorStruct.dir/Demo.cpp.i
 
-CMakeFiles/IteratorStruct.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IteratorStruct.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uriel/CLionProjects/IteratorStruct/main.cpp -o CMakeFiles/IteratorStruct.dir/main.cpp.s
+CMakeFiles/IteratorStruct.dir/Demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/IteratorStruct.dir/Demo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uriel/CLionProjects/IteratorStruct/Demo.cpp -o CMakeFiles/IteratorStruct.dir/Demo.cpp.s
 
 # Object files for target IteratorStruct
 IteratorStruct_OBJECTS = \
-"CMakeFiles/IteratorStruct.dir/main.cpp.o"
+"CMakeFiles/IteratorStruct.dir/Demo.cpp.o"
 
 # External object files for target IteratorStruct
 IteratorStruct_EXTERNAL_OBJECTS =
 
-IteratorStruct: CMakeFiles/IteratorStruct.dir/main.cpp.o
+IteratorStruct: CMakeFiles/IteratorStruct.dir/Demo.cpp.o
 IteratorStruct: CMakeFiles/IteratorStruct.dir/build.make
 IteratorStruct: CMakeFiles/IteratorStruct.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable IteratorStruct"
