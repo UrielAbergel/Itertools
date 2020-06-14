@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yair/Desktop/CPP/itertools-cfar-a/Demo.cpp
+iostream
+-
+vector
+-
+range.hpp
+/home/yair/Desktop/CPP/itertools-cfar-a/range.hpp
+accumulate.hpp
+/home/yair/Desktop/CPP/itertools-cfar-a/accumulate.hpp
+filterfalse.hpp
+/home/yair/Desktop/CPP/itertools-cfar-a/filterfalse.hpp
+compress.hpp
+/home/yair/Desktop/CPP/itertools-cfar-a/compress.hpp
+
+/home/yair/Desktop/CPP/itertools-cfar-a/accumulate.hpp
+iterator
+-
+vector
+-
+
+/home/yair/Desktop/CPP/itertools-cfar-a/compress.hpp
+
+/home/yair/Desktop/CPP/itertools-cfar-a/filterfalse.hpp
+
+/home/yair/Desktop/CPP/itertools-cfar-a/range.hpp
+
