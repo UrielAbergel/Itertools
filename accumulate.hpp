@@ -21,15 +21,16 @@ typedef struct _defult {
 
 namespace itertools
 {
-    template<typename T, typename FUNCTION = _defult>
+    template<typename T , typename Functio>
     class accumulate
     {
     private:
         T & numbers_container;
-        FUNCTION func;
+//        FUNCTION func;
     public:
-//        accumulate(T& containter) :  numbers_container(containter){}
-        accumulate(T& containter , FUNCTION f = defult()) :  numbers_container(containter), func (f){}
+        accumulate(range t) {}
+        accumulate(T& containter) :  numbers_container(containter){}
+//        accumulate(T& containter , FUNCTION f = defult()) :  numbers_container(containter), func (f){}
 
         class iterator
         {

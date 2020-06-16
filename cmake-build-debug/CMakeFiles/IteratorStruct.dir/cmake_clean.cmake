@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/IteratorStruct.dir/Demo.cpp.o"
+  "CMakeFiles/IteratorStruct.dir/Test.cpp.o"
   "IteratorStruct"
   "IteratorStruct.pdb"
 )
