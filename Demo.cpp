@@ -31,7 +31,7 @@ int main(int argc, const char * argv[]) {
     vector<int> vecInt = {1,2,3,4};
     vector<string> vecString = {"Hello", "Bye", "Adam"};
     vector<float> vecFloat = {-1, 0.3, 5.2, -8.3};
-    
+
     cout << "####  accumulate:  ####";
     cout << endl << "accumulate of range: " << endl;
 	for (int i: accumulate(range(5,9)))
@@ -55,13 +55,15 @@ int main(int argc, const char * argv[]) {
         cout << i << " ";   // 5 7
     cout << endl << endl;
 
-    vector<bool> ans = {true,true,false,true};
     cout << "####  compress:  ####";
+    vector<bool> ttft {true,true,false,true};
+
     cout << endl << "compress a string" << endl;
-    for (auto i: compress(string("abcd"),ans ) )
+    for (auto i: compress(string("abcd"), ttft))
         cout << i << " ";  // a b d
+
     cout << endl << "compress a range" << endl;
-    for (auto i: compress(range(5,9), ans) )
+    for (auto i: compress(range(5,9), ttft))
         cout << i << " ";  // 5 6 8
     cout << endl << endl;
 
