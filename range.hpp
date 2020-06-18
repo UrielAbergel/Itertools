@@ -63,12 +63,12 @@ namespace itertools
             };
 
 
-         const iterator begin() const
+         iterator begin() const
         {
             return iterator(start);
         }
 
-         const iterator end() const
+         iterator end() const
         {
             return iterator(last);
         }

@@ -9,37 +9,36 @@
 #include <vector>
 using namespace std;
 
-typedef struct _defult {
-    int x;
-    int y;
-
-    _defult operator[](_defult a) {
-     return a;
+ struct _defult {
+     template<typename T>
+     auto operator()(T& a ,T& b) {
+     return a+b;
     }
 
-} defult;
+} ;
 
 namespace itertools
 {
-    template<typename T , typename Functio>
+    template<typename T , typename Function=_defult>
     class accumulate
     {
     private:
-        T & numbers_container;
-//        FUNCTION func;
+      const  T & numbers_container;
+      const Function& func;
     public:
-        accumulate(range t) {}
-        accumulate(T& containter) :  numbers_container(containter){}
-//        accumulate(T& containter , FUNCTION f = defult()) :  numbers_container(containter), func (f){}
+        accumulate(const T& containter , const Function& f = _defult()) :  numbers_container(containter), func (f){}
 
         class iterator
         {
         private:
-            typename T::iterator iter;
-            decltype(*(numbers_container.begin())) cur_sum;
+            decltype(numbers_container.begin()) iter;
+            typename std::decay<decltype(*(numbers_container.begin()))>:: type cur_sum;
+            const accumulate& my_obj;
 
         public:
-            iterator(typename T::iterator temp): iter(temp),cur_sum(*iter){}
+            iterator( decltype(numbers_container.begin()) it , const accumulate& c): iter(it),my_obj(c){
+                if(iter!= my_obj.numbers_container.end()) cur_sum = *iter;
+            }
 
             iterator &operator++()
             {
@@ -82,12 +81,12 @@ namespace itertools
 
         iterator begin() const
         {
-            return iterator(numbers_container.begin());
+            return iterator(numbers_container.begin(),*this);
         }
 
         iterator end() const
         {
-            return iterator(numbers_container.end());
+            return iterator(numbers_container.end(),*this);
         }
     };
 }

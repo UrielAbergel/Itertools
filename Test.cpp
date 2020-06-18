@@ -7,7 +7,7 @@
 
 #include "accumulate.hpp"
 #include "range.hpp"
-#include "compress.hpp"
+#include "filterfalse.hpp"
 #include <vector>
 #include "doctest.h"
 #include <string>
@@ -40,7 +40,7 @@ TEST_CASE("TEST THE RANGE")
 }
 
 TEST_CASE("CHECK THE RANGE IN THE ACCUMULATE"){
-    vector<int> the_vector_to_check ={10,22,33,46}; // check the positive number
+    vector<int> the_vector_to_check ={10,21,33,46}; // check the positive number
     int the_current_index=0;
     for(int i : accumulate(range(10,15))){
                 CHECK(the_vector_to_check[the_current_index++]==i);
@@ -101,6 +101,7 @@ TEST_CASE("filterfalse"){
     vector<int> check_the_first_vec= {2,4,6,8,10,12};
     vector<int> check_the_first_vec_answer={2,4,6,8,10,12};
     int current_index = 0;
+    int n = rand();
     for(int i : filterfalse([](int a){return a+2%2==0;},check_the_first_vec)){
                 CHECK(check_the_first_vec_answer[current_index++]==i);
     }
@@ -115,7 +116,7 @@ TEST_CASE("filterfalse"){
     vector<string> check_the_first_vec_2 ={"now","i","check" ,"if","the" , "size" , "are", "mode" , "1"};
     vector<string> check_the_first_vec_answer_2 ={"now","i","check" , "the" , "are" , "1" };
     current_index=0;
-    for(auto i : filterfalse([](string s){return s.size()%2==0;},check_the_first_vec_2)){
+    for(auto i : filterfalse([](string s){return s.size()%2!=0;},check_the_first_vec_2)){
                 CHECK(check_the_first_vec_answer_2[current_index++]==i);
     }
 }

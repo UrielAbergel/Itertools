@@ -88,7 +88,7 @@
 		<Unit filename="/home/uriel/CLionProjects/IteratorStruct/Test.cpp">
 			<Option target="IteratorStruct"/>
 		</Unit>
-		<Unit filename="/home/uriel/CLionProjects/IteratorStruct/Test.hpp">
+		<Unit filename="/home/uriel/CLionProjects/IteratorStruct/compress.h">
 			<Option target="IteratorStruct"/>
 		</Unit>
 		<Unit filename="/home/uriel/CLionProjects/IteratorStruct/CMakeLists.txt">
