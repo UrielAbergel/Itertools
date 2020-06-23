@@ -16,7 +16,9 @@ public:
         const filterfalse& my_obj;
     public:
         iterator(decltype(numbers_container.begin()) it, const filterfalse& obj): iter(it),my_obj(obj){
-            // move on the iterator till false from the function.
+            while (iter!=my_obj.numbers_container.end() && (my_obj.func(*iter))){
+                iter++;
+            }
         }
 
         iterator& operator++(){

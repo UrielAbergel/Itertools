@@ -34,7 +34,6 @@ namespace itertools{
                 if(iterator_of_the_second_container != compress_func.the_second_container_to_compress.end()) iterator_of_the_second_container=iter_num_2;
                 while(iterator_of_the_second_container!=the_compress.the_second_container_to_compress.end() && *iterator_of_the_second_container==false) {
                     iterator_of_the_first_conatainer++;
-
                     iterator_of_the_second_container++;
                 }
             }
@@ -52,8 +51,10 @@ namespace itertools{
 
             const iterator operator++(int){
                 iterator temp = *this;
-                ++iterator_of_the_first_conatainer;
-                ++iterator_of_the_second_container;
+                while(iterator_of_the_second_container!=the_compress.the_second_container_to_compress.end() && !(*iterator_of_the_second_container)) {
+                    ++iterator_of_the_first_conatainer;
+                    ++iterator_of_the_second_container;
+                }
                 return temp;
             }
 

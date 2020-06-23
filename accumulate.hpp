@@ -50,12 +50,7 @@ namespace itertools
             {
                 return iter == temp_iter.iter;
             }
-            iterator(const iterator& iter) = default;
 
-            iterator& operator=(const iterator &temp_iter)
-            {
-                return *this;
-            }
 
             bool operator!=(const iterator &temp_iter) const
             {
