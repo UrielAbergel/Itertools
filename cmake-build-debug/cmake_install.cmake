@@ -1,4 +1,4 @@
-# Install script for directory: /home/uriel/CLionProjects/IteratorStruct
+# Install script for directory: /home/yair/Desktop/Itertools
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yair/Desktop/Itertools/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

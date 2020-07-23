@@ -44,16 +44,16 @@ RM = /snap/clion/114/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uriel/CLionProjects/IteratorStruct
+CMAKE_SOURCE_DIR = /home/yair/Desktop/Itertools
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uriel/CLionProjects/IteratorStruct/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yair/Desktop/Itertools/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/IteratorStruct.dir/all
+all: CMakeFiles/itertools.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/IteratorStruct.dir/clean
+clean: CMakeFiles/itertools.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/IteratorStruct.dir
+# Target rules for target CMakeFiles/itertools.dir
 
 # All Build rule for target.
-CMakeFiles/IteratorStruct.dir/all:
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/depend
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target IteratorStruct"
-.PHONY : CMakeFiles/IteratorStruct.dir/all
+CMakeFiles/itertools.dir/all:
+	$(MAKE) -f CMakeFiles/itertools.dir/build.make CMakeFiles/itertools.dir/depend
+	$(MAKE) -f CMakeFiles/itertools.dir/build.make CMakeFiles/itertools.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yair/Desktop/Itertools/cmake-build-debug/CMakeFiles --progress-num= "Built target itertools"
+.PHONY : CMakeFiles/itertools.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/IteratorStruct.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/IteratorStruct.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/IteratorStruct.dir/rule
+CMakeFiles/itertools.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/Desktop/Itertools/cmake-build-debug/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/itertools.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/Desktop/Itertools/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/itertools.dir/rule
 
 # Convenience name for target.
-IteratorStruct: CMakeFiles/IteratorStruct.dir/rule
+itertools: CMakeFiles/itertools.dir/rule
 
-.PHONY : IteratorStruct
+.PHONY : itertools
 
 # clean rule for target.
-CMakeFiles/IteratorStruct.dir/clean:
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/clean
-.PHONY : CMakeFiles/IteratorStruct.dir/clean
+CMakeFiles/itertools.dir/clean:
+	$(MAKE) -f CMakeFiles/itertools.dir/build.make CMakeFiles/itertools.dir/clean
+.PHONY : CMakeFiles/itertools.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

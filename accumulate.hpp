@@ -5,87 +5,79 @@
 #ifndef ITERATORSTRUCT_ACCUMULATE_HPP
 #define ITERATORSTRUCT_ACCUMULATE_HPP
 
-#include <iterator>
+#include <iostream>
 #include <vector>
-using namespace std;
+#include <iterator>
 
- struct _defult {
-     template<typename T>
-     auto operator()(T& a ,T& b) {
-     return a+b;
+typedef struct {
+    template <typename T>
+    auto operator()(const T& x , const T& y) const{
+        return x+y;
     }
 
-} ;
+} add;
 
-namespace itertools
-{
-    template<typename T , typename Function=_defult>
-    class accumulate
-    {
-    private:
-      const  T & numbers_container;
-      const Function& func;
+namespace itertools {
+
+    template<class T,class FUNC = add>
+    class accumulate {
+        const  T& container;
+        const FUNC& function;
     public:
-        accumulate(const T& containter , const Function& f = _defult()) :  numbers_container(containter), func (f){}
 
-        class iterator
-        {
-        private:
-            decltype(numbers_container.begin()) iter;
-            typename std::decay<decltype(*(numbers_container.begin()))>:: type cur_sum;
-            const accumulate& my_obj;
+        accumulate(const T& con, const FUNC& f= add() ) : container(con),function(f){}
+
+        class iterator{
+            decltype(container.begin()) iter;
+            typename std::decay<decltype(*(container.begin()))>::type sum;
+            const accumulate& acc;
+
 
         public:
-            iterator( decltype(numbers_container.begin()) it , const accumulate& c): iter(it),my_obj(c){
-                if(iter!= my_obj.numbers_container.end()) cur_sum = *iter;
+            iterator(decltype(container.begin()) curr,const accumulate& acc): iter(curr),acc(acc) {
+                if (curr != acc.container.end())sum = *curr;
             }
 
-            iterator &operator++()
-            {
-                cur_sum += *(++iter);
+            iterator& operator++(){  //++iter
+                ++iter;
+                if(iter==acc.container.end())return *this;
+                sum=acc.function(sum,*iter);
                 return *this;
             }
 
-            bool operator==(const iterator &temp_iter) const
-            {
-                return iter == temp_iter.iter;
+            const iterator operator++(int){ //iter++
+                iterator temp = *this;
+                sum=acc.function(sum,*(iter++));
+                return temp;
             }
 
-
-            bool operator!=(const iterator &temp_iter) const
-            {
-                return !(iter==temp_iter.iter);
+            bool operator==(const iterator &it) const {
+                return iter==it.iter;
             }
 
-            iterator operator++(int)
-            {
-                iterator prev = *this;
-                cur_sum += iter++;
-                return prev;
+            bool operator!=(const iterator &it) const {
+                return !(iter==it.iter);
             }
 
-            auto operator*() const
-            {
-                return this->cur_sum;
+            auto operator*(){
+                return sum;
             }
 
-
+            iterator& operator=(const iterator &temp_iter)
+            {
+                return *this;
+            }
 
         };
 
+        iterator begin() const {
+            return iterator(container.begin(),*this);
 
-        iterator begin() const
-        {
-            return iterator(numbers_container.begin(),*this);
         }
-
-        iterator end() const
-        {
-            return iterator(numbers_container.end(),*this);
+        iterator end() const {
+            return iterator(container.end(),*this);
         }
     };
+
 }
-
-
-
 #endif //ITERATORSTRUCT_ACCUMULATE_HPP

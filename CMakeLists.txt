@@ -3,4 +3,4 @@ project(IteratorStruct)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(IteratorStruct Demo.cpp Test.cpp compress.hpp)
+add_executable(accumulate.hpp)

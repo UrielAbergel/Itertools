@@ -8,90 +8,86 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug"/>
+				<Option working_dir="/home/yair/Desktop/Itertools/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug"/>
+				<Option working_dir="/home/yair/Desktop/Itertools/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug"/>
+				<Option working_dir="/home/yair/Desktop/Itertools/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="IteratorStruct">
-				<Option output="/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/IteratorStruct" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug"/>
+			<Target title="itertools">
+				<Option output="/home/yair/Desktop/Itertools/cmake-build-debug/itertools" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yair/Desktop/Itertools/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 IteratorStruct"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 itertools"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="IteratorStruct/fast">
-				<Option output="/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/IteratorStruct" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug"/>
+			<Target title="itertools/fast">
+				<Option output="/home/yair/Desktop/Itertools/cmake-build-debug/itertools" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/yair/Desktop/Itertools/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 IteratorStruct/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 itertools/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/Itertools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/uriel/CLionProjects/IteratorStruct/Demo.cpp">
-			<Option target="IteratorStruct"/>
+		<Unit filename="/home/yair/Desktop/Itertools/accumulate.hpp">
+			<Option target="itertools"/>
 		</Unit>
-		<Unit filename="/home/uriel/CLionProjects/IteratorStruct/Test.cpp">
-			<Option target="IteratorStruct"/>
-		</Unit>
-		<Unit filename="/home/uriel/CLionProjects/IteratorStruct/compress.h">
-			<Option target="IteratorStruct"/>
-		</Unit>
-		<Unit filename="/home/uriel/CLionProjects/IteratorStruct/CMakeLists.txt">
+		<Unit filename="/home/yair/Desktop/Itertools/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

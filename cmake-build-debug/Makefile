@@ -48,10 +48,10 @@ RM = /snap/clion/114/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uriel/CLionProjects/IteratorStruct
+CMAKE_SOURCE_DIR = /home/yair/Desktop/Itertools
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uriel/CLionProjects/IteratorStruct/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yair/Desktop/Itertools/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles /home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/Desktop/Itertools/cmake-build-debug/CMakeFiles /home/yair/Desktop/Itertools/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uriel/CLionProjects/IteratorStruct/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/Desktop/Itertools/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,71 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named IteratorStruct
+# Target rules for targets named itertools
 
 # Build rule for target.
-IteratorStruct: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 IteratorStruct
-.PHONY : IteratorStruct
+itertools: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 itertools
+.PHONY : itertools
 
 # fast build rule for target.
-IteratorStruct/fast:
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/build
-.PHONY : IteratorStruct/fast
-
-Demo.o: Demo.cpp.o
-
-.PHONY : Demo.o
-
-# target to build an object file
-Demo.cpp.o:
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/Demo.cpp.o
-.PHONY : Demo.cpp.o
-
-Demo.i: Demo.cpp.i
-
-.PHONY : Demo.i
-
-# target to preprocess a source file
-Demo.cpp.i:
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/Demo.cpp.i
-.PHONY : Demo.cpp.i
-
-Demo.s: Demo.cpp.s
-
-.PHONY : Demo.s
-
-# target to generate assembly for a file
-Demo.cpp.s:
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/Demo.cpp.s
-.PHONY : Demo.cpp.s
-
-Test.o: Test.cpp.o
-
-.PHONY : Test.o
-
-# target to build an object file
-Test.cpp.o:
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/Test.cpp.o
-.PHONY : Test.cpp.o
-
-Test.i: Test.cpp.i
-
-.PHONY : Test.i
-
-# target to preprocess a source file
-Test.cpp.i:
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/Test.cpp.i
-.PHONY : Test.cpp.i
-
-Test.s: Test.cpp.s
-
-.PHONY : Test.s
-
-# target to generate assembly for a file
-Test.cpp.s:
-	$(MAKE) -f CMakeFiles/IteratorStruct.dir/build.make CMakeFiles/IteratorStruct.dir/Test.cpp.s
-.PHONY : Test.cpp.s
+itertools/fast:
+	$(MAKE) -f CMakeFiles/itertools.dir/build.make CMakeFiles/itertools.dir/build
+.PHONY : itertools/fast
 
 # Help Target
 help:
@@ -185,13 +131,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... IteratorStruct"
-	@echo "... Demo.o"
-	@echo "... Demo.i"
-	@echo "... Demo.s"
-	@echo "... Test.o"
-	@echo "... Test.i"
-	@echo "... Test.s"
+	@echo "... itertools"
 .PHONY : help
 
 
